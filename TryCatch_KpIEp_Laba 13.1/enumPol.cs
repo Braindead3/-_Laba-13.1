@@ -8,7 +8,7 @@ namespace TryCatch_KpIEp_Laba_13._1
 {
     public enum enumPol
     {
-        male,
-        female
+        мужской,
+        женский
     }
 }

@@ -12,7 +12,8 @@ namespace TryCatch_KpIEp_Laba_13._1
         {
             try
             {
-                Pchel pchel = new Pchel(17, "Влад", "male");
+                Pchel pchel = new Pchel(12, "Влад", "мужской");
+                Console.WriteLine(pchel.ToString());
             }
             catch (PchelException ex)
             {

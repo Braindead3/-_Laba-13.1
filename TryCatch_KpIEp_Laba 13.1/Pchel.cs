@@ -74,15 +74,15 @@ namespace TryCatch_KpIEp_Laba_13._1
             }
             set
             {
-                if (value==enumPol.male.ToString() || value==enumPol.female.ToString())
+                if (value==enumPol.мужской.ToString() || value==enumPol.женский.ToString())
                 {
-                    if (value == enumPol.male.ToString())
+                    if (value == enumPol.мужской.ToString())
                     {
-                        pol = enumPol.male;
+                        pol = enumPol.мужской;
                     }
                     else
                     {
-                        pol = enumPol.female;
+                        pol = enumPol.женский;
                     }
                 }
                 else
@@ -91,6 +91,13 @@ namespace TryCatch_KpIEp_Laba_13._1
                 }
 
             }
+        }
+
+        public override string ToString()
+        {
+            return $"Имя:{name}\n" +
+                $"Возраст:{age}\n" +
+                $"Пол:{pol.ToString()}";
         }
     }
 }
